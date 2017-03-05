@@ -1,8 +1,20 @@
 @font-face {
-  font-family: "OpenSans-Light";
+  font-family: "RobotoLight";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/OpenSansLight/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype"); }
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoSlabBold";
+  font-style: 700;
+  font-weight: normal;
+  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"), url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype"); }
 
 /* GENERAL RESET AREA START */
 *::-webkit-input-placeholder {
@@ -67,26 +79,58 @@ button, button:hover, button:active {
   outline: none; }
 
 /* GENERAL RESET END*/
-body {
-  height: 100%;
-  min-width: 320;
-  font-size: 14px;
-  line-height: 1.1;
-  position: relative;
-  margin: 0; }
-
 .clearfix:after {
   content: "";
   display: block;
   clear: both; }
 
-.page-top {
+html,
+body,
+.main-head_wrap,
+.main-head {
+  height: 100%; }
+
+body {
+  min-width: 320;
+  font-size: 16px;
+  color: #292827;
+  line-height: 1.1;
+  position: relative;
+  margin: 0; }
+
+.main-head_wrap {
   width: 100%;
-  background: url("../img/banner-main.jpg") no-repeat 0 0;
-  background-size: cover; }
+  background: url("../img/ornament.png") repeat-x 0 100%, linear-gradient(to bottom, rgba(234, 76, 88, 0.5), rgba(234, 76, 88, 0)) no-repeat 0 100%;
+  background: url("../img/ornament.png") repeat-x 0 100%, -webkit-linear-gradient(bottom, rgba(234, 76, 88, 0.5), rgba(234, 76, 88, 0)) no-repeat 0 100%;
+  background: url("../img/ornament.png") repeat-x 0 100%, -moz-linear-gradient(bottom, rgba(234, 76, 88, 0.5), rgba(234, 76, 88, 0)) no-repeat 0 100%;
+  background: url("../img/ornament.png") repeat-x 0 100%, -ms-linear-gradient(bottom, rgba(234, 76, 88, 0.5), rgba(234, 76, 88, 0)) no-repeat 0 100%;
+  background: url("../img/ornament.png") repeat-x 0 100%, -o-linear-gradient(bottom, rgba(234, 76, 88, 0.5), rgba(234, 76, 88, 0)) no-repeat 0 100%;
+  background-size: auto, 100% 50vh;
+  position: relative; }
+
+.main-head {
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .header {
-  max-width: 907px;
+  width: 100%;
+  max-width: 902px;
   margin: 0 auto;
   display: -webkit-flex;
   display: -moz-flex;
@@ -100,13 +144,129 @@ body {
   -o-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding-top: 20px; }
 
 .logo {
   font-size: 0; }
 
 .btn-subscribe {
-  background-color: #d92d3a;
-  border-radius: 7px;
+  font-family: "RobotoLight";
+  background-color: #ea4c58;
+  border-radius: 5px;
   color: #fff;
-  line-height: 32px; }
+  line-height: 32px;
+  padding: 0 22px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s; }
+  .btn-subscribe:hover {
+    background-color: #f95d69; }
+  .btn-subscribe:active {
+    background-color: #d92d3a; }
+
+.main-head_heading {
+  width: 100%;
+  max-width: 907px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 45px; }
+
+h2 {
+  font-family: "RobotoSlabBold";
+  font-size: 36px;
+  letter-spacing: 1.3px;
+  margin-bottom: 10px; }
+
+.main-head_subheading {
+  font-family: "RobotoLight";
+  font-size: 16px;
+  letter-spacing: 0.6px; }
+
+.main-wrap {
+  max-width: 902px;
+  margin: 0 auto; }
+
+.main-content {
+  width: 56.76%;
+  float: left;
+  margin-top: 75px; }
+
+.aside {
+  width: 36.15%;
+  float: right; }
+
+h4 {
+  min-width: 169px;
+  margin: 0 auto 40px;
+  padding-bottom: 38px;
+  text-align: center;
+  font-family: "RobotoSlabBold";
+  font-size: 16px;
+  color: #000;
+  background: url("../img/h3-bg.png") no-repeat center 100%; }
+
+.post-header {
+  margin-bottom: 9px; }
+
+.btn-post-category {
+  font-family: "RobotoRegular";
+  color: #ea4c58;
+  line-height: 24px;
+  padding: 0 10px;
+  background-color: transparent;
+  border: 1px solid #ea4c58;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+  display: inline-block;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s; }
+  .btn-post-category:hover {
+    background-color: #ea4c58;
+    color: #fff; }
+  .btn-post-category:active {
+    border-color: #d92d3a;
+    background-color: #d92d3a; }
+
+.post-header_date {
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 6px;
+  display: inline-block;
+  letter-spacing: 0.5px; }
+
+h3 {
+  width: 83%;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-family: "RobotoSlabBold";
+  margin-bottom: 11px;
+  letter-spacing: 0.9px; }
+
+.post-img {
+  max-height: 200px;
+  margin-bottom: 11px; }
+  .post-img img {
+    width: 100%;
+    height: auto; }
+
+.post-content {
+  margin-bottom: 47px; }
+  .post-content p {
+    display: inline-block;
+    font-family: "RobotoLight";
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 32px;
+    letter-spacing: 0.6px; }
