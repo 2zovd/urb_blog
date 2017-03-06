@@ -16,12 +16,13 @@ body,
 	height: 100%
 
 body
-	min-width: 320
+	min-width: 320px
 	font-size: 16px
 	color: #292827
 	line-height: 1.1
 	position: relative
 	margin: 0
+	overflow-x: hidden
 
 .main-head_wrap
 	width: 100%
@@ -176,6 +177,7 @@ h3
 .post-img
 	max-height: 200px
 	margin-bottom: 11px
+	overflow: hidden
 	img
 		width: 100%
 		height: auto
@@ -281,16 +283,15 @@ h3
 	margin-bottom: 44px
 
 .search-area
-	width: 81.59%
+	width: 75%
 	float: left
 	height: 42px
 	border: none
 	outline: none
 	text-indent: 12px
-	padding-right: 12px
 
 .btn-search
-	width: 17%
+	width: 56px
 	float: right
 	font-size: 21px
 	color: #fff
@@ -370,7 +371,6 @@ h5
 .side-banner-small
 	display: block
 	margin-bottom: 87px
-	max-height: 213px
 	overflow: hidden
 	a
 		display: block
@@ -422,7 +422,6 @@ h5
 	   
 .side-banner-big
 	display: block
-	max-height: 419px
 	overflow: hidden
 	a
 		display: block
@@ -597,3 +596,6 @@ h5
 		font-size: 12px
 		padding: 15px 0
 		letter-spacing: 1px
+
+.show-small
+	display: none

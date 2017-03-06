@@ -8,8 +8,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.main-head,
-	.main-wrap{
-		padding: 0 6%;
+	.main-wrap,
+	.footer {
+		margin-left: 6%;
+		margin-right: 6%;
 	}
 	.header {
 		padding-top: 14px;
@@ -20,7 +22,6 @@
 	}
 
 	.footer {
-		margin: 0 6%;
     padding: 46px 0 35px;
 	}
 	.subscribe {
@@ -39,12 +40,6 @@
 		margin: 0;
 		margin-bottom: 10px;
 	}
-
-	.btn-subscribe-bottom {
-    margin-bottom: 70px;
-	}
-
-	}
 	.subscribe .subscribe-heading {
 		padding: 0;
 		margin-bottom: 30px;	
@@ -54,7 +49,6 @@
 		width: 100%;
 		margin: 28px 0;
 	}
-
 	.footer-top {
 		margin-bottom: 79px;
 	}
@@ -69,11 +63,9 @@
 	.privacy-nav {
 		padding-top: 0;
 	}
-
 	.privacy-nav li a {
 		line-height: 37px;
 	}
-
 	.page-bottom {
 		padding: 0 20%;
 	}
@@ -86,11 +78,25 @@
 	.btn-subscribe-bottom {
 		line-height: 52px;
 	}
+	.subscribe .btn-subscribe-bottom {
+    margin-bottom: 70px;
+	}
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width : 810px) {
+	.main-content,
+	.aside {
+		width: 100%;
+	}
+	.search-hold.hide-small {
+		display: none;
+	}
+	.search-hold.show-small {
+		display: block;
+	}
+	.main-wrap {
+    margin-top: 21px;
+	}
 }
 
 /* Extra Small Devices, Phones */
