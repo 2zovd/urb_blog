@@ -88,14 +88,17 @@
 	.aside {
 		width: 100%;
 	}
-	.search-hold.hide-small {
+	.hide-small {
 		display: none;
 	}
-	.search-hold.show-small {
+	.show-small {
 		display: block;
 	}
 	.main-wrap {
     margin-top: 21px;
+	}
+	.post-img {
+		margin-bottom: 14px;
 	}
 }
 
@@ -103,6 +106,12 @@
 @media only screen and (max-width : 480px) {
 	.header h1{
 		width: 33%;
+	}
+	h2 {
+		font-size: 5vw;
+	}
+	.main-head_subheading {
+		font-size: 4vw;
 	}
 }
 
