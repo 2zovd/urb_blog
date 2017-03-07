@@ -132,6 +132,7 @@
 	.popular-posts_img {
 	    width: 25%;
 	    max-height: 70px;
+	    margin-right: 5%;
 	}
 }
 
