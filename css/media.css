@@ -25,7 +25,7 @@
     padding: 46px 0 35px;
 	}
 	.subscribe {
-		padding: 28px 4% 0;
+		padding: 28px 6% 0;
 	}
 	.subscribe-wrap {
 		padding: 21px 0 0;
@@ -100,6 +100,19 @@
 	.post-img {
 		margin-bottom: 14px;
 	}
+	.main-head_wrap {
+		min-height: 300px !important;
+		max-height: 300px !important;
+		background: url('../img/ornament.png') repeat-x 0 100%, -webkit-linear-gradient(bottom, rgba(234, 76, 88, 0.5), rgba(234, 76, 88, 0)) no-repeat 0 100%, url('../img/blog-banner.jpg') no-repeat center 0;
+		-webkit-background-size: 9px 12px, 100% 50%, cover;
+		background-size: 9px 12px, 100% 50%, cover;
+	}
+	.parallax-mirror {
+		display: none !important;
+	}
+	.main-head_heading {
+		margin-bottom: 27px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -112,6 +125,20 @@
 	}
 	.main-head_subheading {
 		font-size: 4vw;
+	}
+	h2 {
+		margin-bottom: 3px;
+	}
+	.popular-posts_img {
+	    width: 25%;
+	    max-height: 70px;
+	}
+}
+
+@media only screen and (max-width : 340px) {
+	.main-head_wrap {
+		min-height: 163px !important;
+		max-height: 163px !important;
 	}
 }
 
