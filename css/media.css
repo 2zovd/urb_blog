@@ -9,6 +9,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.up-arrow {display: none;}
 	.main-head,
 	.main-wrap,
 	.footer{

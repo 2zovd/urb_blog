@@ -78,6 +78,7 @@ a {
   text-decoration: none; }
 
 a:hover, a:active, a:focus {
+  color: #000;
   text-decoration: none;
   outline: none; }
 
@@ -707,9 +708,18 @@ h5 {
   border: none;
   background: none;
   color: #fa8e88;
-  font-size: 21px; }
+  font-size: 21px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 100px;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
   .modal-close-btn:hover {
-    color: #fff; }
+    background: rgba(255, 255, 255, 0.1); }
 
 .modal-body {
   border: 4px solid #fa8e88;
@@ -770,3 +780,32 @@ h5 {
   font-size: 14px;
   font-family: "RobotoRegular";
   color: rgba(0, 0, 0, 0.4); }
+
+.error-message {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  font-family: "RobotoRegular";
+  color: #ea4c58;
+  text-align: center; }
+
+.up-arrow {
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: #ea4c58;
+  border-radius: 100px;
+  top: 0;
+  right: 0px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 2000; }
+  .up-arrow i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px; }

@@ -1,0 +1,7 @@
+.search-result_header p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-family: "RobotoRegular";
+  margin-bottom: 23px; }
+  .search-result_header p a {
+    color: #3f4cae; }
