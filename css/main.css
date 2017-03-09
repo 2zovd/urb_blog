@@ -167,7 +167,7 @@ body {
     height: auto; }
 
 .btn-header-subscribe {
-  font-family: "RobotoLight";
+  font-family: "RobotoSlabLight";
   background-color: #ea4c58;
   border-radius: 5px;
   color: #fff;
@@ -689,10 +689,73 @@ h5 {
   display: none; }
 
 /* modal styles */
-.modal {
-  margin: 0 auto; }
-
 .modal-dialog {
-  margin: 0 auto;
-  background-color: #fff;
-  width: 500px; }
+  width: 500px;
+  margin: 200px auto 50px; }
+
+.modal-close-btn {
+  position: absolute;
+  right: -28px;
+  top: -25px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #fa8e88;
+  font-size: 21px; }
+  .modal-close-btn:hover {
+    color: #fff; }
+
+.modal-body {
+  border: 4px solid #fa8e88;
+  padding: 30px 55px;
+  text-align: center;
+  background-color: #fbe7e5; }
+
+.modal-subscr-heading {
+  display: inline-block;
+  font-family: "RobotoSlabBold";
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 31px;
+  letter-spacing: 0.7px;
+  width: 85%; }
+
+.modal-subscr-field {
+  font-family: "RobotoLight";
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 53px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-indent: 13px;
+  max-width: 360px;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  outline: none; }
+  .modal-subscr-field:focus {
+    border: 1px solid rgba(0, 0, 0, 0.4); }
+
+.modal-subscr-btn {
+  font-family: "RobotoSlabBold";
+  font-size: 16px;
+  line-height: 52px;
+  background-color: #ea4c58;
+  margin-bottom: 44px;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0 43px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s; }
+  .modal-subscr-btn:hover {
+    background-color: #f95d69; }
+  .modal-subscr-btn:active {
+    background-color: #d92d3a; }
+
+.modal-subscr-info {
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block; }

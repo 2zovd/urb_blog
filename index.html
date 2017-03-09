@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal.min.css">
 </head>
 
 <body>
@@ -261,30 +261,21 @@
 	<!-- Modal -->
 	<div class="modal fade" id="subscribe" role="dialog">
 		<div class="modal-dialog">
+			<button type="button" class="modal-close-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-				</div>
 				<div class="modal-body">
-
-						<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-
-				</div>
-				<div class="modal-footer">
-					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-					<p>Not a member? <a href="#">Sign Up</a></p>
-					<p>Forgot <a href="#">Password?</a></p>
+					<span class="modal-subscr-heading">Get awesome love content in your inbox every week</span>
+					<input type="text" class="modal-subscr-field" placeholder="Email Address">
+					<button class="modal-subscr-btn">Subscribe</button>
+					<i class="modal-subscr-info">Start with us and you will have the chance to find your love!</i>
 				</div>
 			</div>
-	      
-	    </div>
-	  </div> 
+		</div>
+	</div> 
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="js/common.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/parallax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
