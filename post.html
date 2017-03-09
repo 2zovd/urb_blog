@@ -22,7 +22,7 @@
 					<h2>Love is the greatest feeling!</h2>
 					<p class="main-head_subheading">Give yourself a chance to love and to be beloved!</p>
 				</div>
-				<button type="button" class="btn-header-subscribe">Subscribe</button>
+				<button type="button" class="btn-header-subscribe" data-toggle="modal" data-target="#subscribe">Subscribe</button>
 			</header>
 			<div class="main-head_heading">
 				<h2>Love is the greatest feeling!</h2>
@@ -111,17 +111,17 @@
 
 				<div class="reply">
 					<h3>Leave a Reply</h3>
-					<p>Your email address will not be published. Required fields are marked *</p>
+					<p>Your email address will not be published. Required fields are marked <sup class="star-mark">*</sup></p>
 					<div class="reply-row">
-						<label for="reply-name">Name<sup>*</sup></label>
+						<label for="reply-name">Name<sup class="star-mark">*</sup></label>
 						<input type="text" id="reply-name" placeholder="Your name">
 					</div>
 					<div class="reply-row">
-						<label for="reply-name">Email<sup>*</sup></label>
+						<label for="reply-name">Email<sup class="star-mark">*</sup></label>
 						<input type="text" id="reply-name" placeholder="Your email adress">
 					</div>
 					<div class="reply-row">
-						<label for="reply-comment">Comment<sup>*</sup></label>
+						<label for="reply-comment">Comment<sup class="star-mark">*</sup></label>
 						<textarea name="comment" id="reply-comment" cols="10" rows="4" placeholder="Write your comment here"></textarea>
 					</div>
 					<button class="post-comment">Post a comment</button>
@@ -284,7 +284,20 @@
 		</div>
 	</section>
 
-
+	<!-- Modal -->
+	<div class="modal fade" id="subscribe" role="dialog">
+		<div class="modal-dialog">
+			<button type="button" class="modal-close-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<div class="modal-content">
+				<div class="modal-body">
+					<span class="modal-subscr-heading">Get awesome love content in your inbox every week</span>
+					<input type="text" class="modal-subscr-field" placeholder="Email Address">
+					<button class="modal-subscr-btn">Subscribe</button>
+					<i class="modal-subscr-info">Start with us and you will have the chance to find your love!</i>
+				</div>
+			</div>
+		</div>
+	</div> 
 
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
