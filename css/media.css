@@ -9,7 +9,7 @@
 @media only screen and (max-width : 992px) {
 	.main-head,
 	.main-wrap,
-	.footer {
+	.footer{
 		margin-left: 6%;
 		margin-right: 6%;
 	}
@@ -101,9 +101,9 @@
 	.main-head_wrap {
 		min-height: 300px !important;
 		max-height: 300px !important;
-		background: url('../img/ornament.png') repeat-x 0 100%, -webkit-linear-gradient(bottom, rgba(234, 76, 88, 0.5), rgba(234, 76, 88, 0)) no-repeat 0 100%, url('../img/blog-banner.jpg') no-repeat center 0;
-		-webkit-background-size: 9px 12px, 100% 50%, cover;
-		background-size: 9px 12px, 100% 50%, cover;
+		background: url('../img/ornament.png') repeat-x 0 100%, -webkit-linear-gradient(bottom, rgba(234, 76, 88, 0.9), rgba(234, 76, 88, 0)) no-repeat 0 100%, url('../img/blog-banner.jpg') no-repeat center 0;
+		-webkit-background-size: 9px 12px, 100% 80%, cover;
+		background-size: 9px 12px, 100% 80%, cover;
 	}
 	.parallax-mirror {
 		display: none !important;
@@ -168,6 +168,9 @@
 	.modal-close-btn {
 	    right: 0px;
 	    top: -29px;
+	}
+	.modal-open .modal {
+		padding: 0 !important;
 	}
 }
 

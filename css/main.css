@@ -207,7 +207,7 @@ h2 {
   margin: 74px auto 95px; }
 
 .main-content {
-  width: 56.76%;
+  width: 62%;
   float: left; }
 
 h4 {
@@ -217,6 +217,7 @@ h4 {
   text-align: center;
   font-family: "RobotoSlabBold";
   font-size: 16px;
+  letter-spacing: 0.6px;
   color: #000;
   background: url("../img/h3-bg.png") no-repeat center 100%; }
 
@@ -263,22 +264,27 @@ h3 {
   letter-spacing: 0.9px; }
 
 .post-img {
-  max-height: 200px;
-  margin-bottom: 11px;
-  overflow: hidden; }
+  float: left;
+  margin-bottom: 11px; }
   .post-img img {
     width: 100%;
-    height: auto; }
+    max-height: 200px;
+    -o-object-fit: fill;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%; }
 
 .post-content {
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  width: 91%; }
   .post-content p {
     display: inline-block;
     font-family: "RobotoLight";
     font-size: 16px;
-    line-height: 23px;
-    margin-bottom: 32px;
-    letter-spacing: 0.6px; }
+    line-height: 24px;
+    margin-bottom: 26px;
+    letter-spacing: 0.6px;
+    padding-left: 7px; }
 
 .pages-nav {
   text-align: center;
@@ -759,3 +765,8 @@ h5 {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
   display: inline-block; }
+
+.author-name {
+  font-size: 14px;
+  font-family: "RobotoRegular";
+  color: rgba(0, 0, 0, 0.4); }
