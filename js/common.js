@@ -10,3 +10,23 @@ $(document).ready(function() {
 	});
 
 });
+
+$(window).scroll(function(){
+    var sticky = $('#top-scroll'),
+        scroll = $(window).scrollTop();
+
+    if ( scroll >= 250) {
+        sticky.addClass('is-show');
+    } else {
+        sticky.removeClass('is-show');
+    }
+});
+
+$(document).ready(function() {
+  
+    $('#top-scroll').click(function () {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 800);
+    });
+});
