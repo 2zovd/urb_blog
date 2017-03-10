@@ -792,23 +792,35 @@ h5 {
 
 .to-top {
   position: fixed;
-  display: none;
+  visibility: hidden;
   width: 48px;
   height: 48px;
+  -webkit-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+  transform: translateX(-100px);
   background: #ea4c58;
   border-radius: 100px;
-  bottom: 50px;
-  right: 6%;
+  bottom: 100px;
+  right: 10%;
   color: #fff;
   text-align: center;
   cursor: pointer;
   border: none;
   outline: none;
-  z-index: 2000; }
+  z-index: 2000;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
   .to-top i {
     display: inline-block;
     vertical-align: middle;
-    font-size: 20px; }
+    font-size: 14px;
+    line-height: 48px; }
 
 .is-show {
-  display: block; }
+  visibility: visible;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0); }
